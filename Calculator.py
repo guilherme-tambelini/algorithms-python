@@ -6,7 +6,7 @@ import datetime
 
 #Funções Não funcionais
 def escreveLog(texto):
-	log = "C:\\Alpha\\Algoritimos\\Python\\Calculadora\\Log-Calculator.txt"
+	log = ".\Log-Calculator.txt"
 	try:
 	    fp = open(log)
 	except IOError:
@@ -104,7 +104,7 @@ while (continua == "s"):
 			escreveLog(str(e))
 	
 	elif (escolha == 5):
-		resultado = str(potencia(num1, num2))
+		resultado = str(pow(num1, num2))
 		escreveTextoResultado(str(num1) + " elevado a " + str(num2) + " = " + str(resultado))
 		escreveLog(str(num1) + " elevado a " + str(num2) + " = " + str(resultado))
 	else:
